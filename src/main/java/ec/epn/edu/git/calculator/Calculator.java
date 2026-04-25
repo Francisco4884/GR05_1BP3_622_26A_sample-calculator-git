@@ -1,21 +1,38 @@
 package ec.epn.edu.git.calculator;
 
 public class Calculator {
+    private int respuesta;
+
     public int sumar(int a, int b){
         return a + b;
     }
+
     public int restar(int a, int b){
         return a -b;
     }
+
     public int multiplicar(int a, int b){
         return a * b;
     }
-    public int dividir(int x, int y){
-        if(y == 0){
-            throw new  ArithmeticException("No se puede dividir por cero");
-        }
-        return x/y;
+
+    @SuppressWarnings("ArithmeticException")
+    public int dividir(int a, int b){
+        return a/b;
     }
 
+    public void timeout(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
+    public int getRespuesta() {
+        return respuesta;
+    }
+
+    public void setRespuesta(int respuesta) {
+        this.respuesta = respuesta;
+    }
 }
