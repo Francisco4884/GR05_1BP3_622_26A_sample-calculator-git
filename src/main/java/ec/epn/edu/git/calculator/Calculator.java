@@ -35,4 +35,9 @@ public class Calculator {
     public void setRespuesta(int respuesta) {
         this.respuesta = respuesta;
     }
+
+    @SuppressWarnings("ArithmeticException")
+    public int modulo(int a, int b){
+        return a%b;
+    }
 }

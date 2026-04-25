@@ -63,6 +63,13 @@ public class CalculatorTest {
         c.timeout(100);
     }
 
+    @Test
+    public void give_two_integers_when_module_then_ok(){
+        System.out.println("Test 7");
+        int resultado = c.modulo(10,3);
+        assertEquals(1, resultado);
+    }
+
     @After
     public void tearDown() {
         System.out.println("tearDown()");
