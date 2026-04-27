@@ -40,4 +40,8 @@ public class Calculator {
     public int modulo(int a, int b){
         return a%b;
     }
+    //Potenciación
+    public double potencia(double x, double y){
+        return Math.pow(x, y);
+    }
 }
