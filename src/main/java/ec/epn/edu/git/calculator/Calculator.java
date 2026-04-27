@@ -20,6 +20,10 @@ public class Calculator {
         return a/b;
     }
 
+    public double porcentaje (double a, double b) {
+        return (a * b) / 100;
+    }
+
     public void timeout(int time) {
         try {
             Thread.sleep(time);

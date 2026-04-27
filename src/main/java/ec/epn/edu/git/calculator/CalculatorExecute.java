@@ -17,5 +17,8 @@ public class CalculatorExecute {
 
         System.out.println("Potenciación (4 ^ 2): " + calculator.potencia(x, y));
         System.out.println("Segundo Cambio!!");
+
+        System.out.println("porcentaje: 10% de 5: " + calculator.porcentaje(x , y));
+        System.out.println("Es un último cambio");
     }
 }
